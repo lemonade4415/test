@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .header img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .content {
+    display: flex;
+    flex-grow: 1;
+  }
+  .sidebar {
+    background-color: #eee;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 250px;
+    height: 275px;
+    margin-right: 20px;
+  }
+  .sidebar input,
+  .sidebar select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .applicant-list {
+    flex: 1;
+    padding: 15px 20px;
+    border-radius: 5px;
+    min-height: calc(100vh - (60px + 30px + 40px));
+  }
+  .applicant-list .applicant {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  .applicant-list .applicant img {
+    width: 80px;
+    margin-right: 20px;
+  }
+  .applicant-list .applicant .applicant-info {
+    flex: 1;
+  }
+  .applicant-list .applicant .applicant-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .applicant-list .applicant .applicant-info p {
+    margin-bottom: 5px;
+  }
+.footer {
+      text-align: center;
+      margin-top: 20px;
+      background-color: #ddd;
+      padding: 5px 10px;
+      border-radius: 5px;
+  }

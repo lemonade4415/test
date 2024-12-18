@@ -1,0 +1,51 @@
+body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #ddd;
+      padding: 15px 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    .header img {
+      width: 50px;
+      margin-right: 10px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+    }
+    .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+    .profile h2,
+    .profile p {
+      margin: 0;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+    .nav button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .nav button.active {
+      background-color: #eee;
+    }
+    .content {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }

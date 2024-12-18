@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MainHomePage</title>
+    <link rel="stylesheet" href="../css/MainHomePageStyle.css"> <!-- MainHomePageStyle.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="banner">
+        <nav>
+            <a href="./MainHomePage.html"><img src="../../Image/logo.png" class="logo"></a>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./MainHomePage.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./RegisterPage.php">Register</a></li>
+                    <li><a href="./LoginPage.php">Login</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="content">
+            <h1>WE MAKE HIRING EASY</h1>
+            <p>Building the Future of IT Together</p>
+            <a href="" class="pagebutton">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!-------- About Us Page -------->
+
+    <section class="about" id="about">
+        <h1>About Our Company</h1>
+        <p>Creating a platform to improve cybersecurity in Indonesia is a commendable goal! Building a centralized resource where individuals can find opportunities and companies can recruit professionals could greatly contribute to strengthening cybersecurity measures in the country.</p>
+        <p>Our company will use UU Cipta Kerja in accordance with Indonesia regulations to carry out recruitment, the aim to give individuals the flexibility to apply for job as a permanent or contract worker. We also provide a worker manager for HR department for easy monitoring company worker.</p>
+    </section>
+
+    <!-------- The Service -------->
+
+    <section class="service">
+        <h1>The Service</h1>
+
+        <div class="row">
+            <div class="servicecolom">
+                <h3>Provide Opportunities</h3>
+                <p>We provide a platform for job seeker to discover a wide range of opportunities.</p>
+            </div>
+            <div class="servicecolom">
+                <h3>Easy Hiring</h3>
+                <p>We make our platform not only for professional to seek opportunities but also companies who seek them.</p>
+            </div>
+            <div class="servicecolom">
+                <h3>Expand Your Networking</h3>
+                <p>Get noticed and start connecting with other companies or professionals</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------- Mission -------->
+
+    <section class="about">
+        <h1>Our Mission</h1>
+        <p>In today's digital landscape, a strong and secure IT infrastructure is vital for any business.  However, finding the right talent to build and maintain that infrastructure can be a challenge. That's where we come in.
+
+        Our mission is to bridge the gap between businesses and top-tier IT and cybersecurity professionals. We connect companies with skilled individuals who can safeguard their networks, manage complex systems, and drive innovation.
+        
+        We believe in fostering a secure digital environment for businesses of all sizes.  By connecting the right talent with the right opportunities, we empower organizations to thrive in the ever-evolving technological landscape.</p>
+    </section>
+
+    <!-------- The Team -------->
+
+    <section class="team">
+        <div class="team-tittle">
+            <h1>Our team</h1>
+        </div>
+
+        <div class="team-content">
+            <div class="team-box">
+                <img src="../../Image/tanto.jpg" alt="tanto">
+                <h3>Cyber Resource</h3>
+                <h5>Team leader - Marvel Jehian</h5>
+                <div class="team-icon">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="team-box">
+                <img src="../../Image/owen.jpg" alt="owen">
+                <h3>Cyber Resource</h3>
+                <h5>Developer - Bryan Owen</h5>
+                <div class="team-icon">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="team-box">
+                <img src="../../Image/shane.jpg" alt="shane">
+                <h3>Cyber Resource</h3>
+                <h5>Developer - Shane Law</h5>
+                <div class="team-icon">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="team-box">
+                <img src="../../Image/daffa.jpg" alt="daffa">
+                <h3>Cyber Resource</h3>
+                <h5>Developer - Achmad Daffa</h5>
+                <div class="team-icon">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="team-box">
+                <img src="../../Image/willi.jpg" alt="willi">
+                <h3>Cyber Resource</h3>
+                <h5>Developer - Willy Octavio</h5>
+                <div class="team-icon">
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>source code: <a href="https://github.com/thinkabtwen/SecProg"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+    </footer>
+
+    <script>
+        // navbar for 700px screen
+        var navbar = document.getElementById("navbar");
+
+        function showMenu(){
+            navbar.style.right = "0";
+        }
+        function hideMenu(){
+            navbar.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
